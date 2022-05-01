@@ -25,7 +25,25 @@ body {
 
 /* END RESET */
 
-/* index.html */
+/* FONTS */
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Regular.woff2") format("woff2"),
+       url("/fonts/Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Bold.woff2") format("woff2"),
+       url("/fonts/Roboto-Bold.woff") format("woff");
+  font-weight: 700;
+}
+
+/* END FONTS */
+
+/* INDEX.HTML */
 
 body {
   font-family: Arial, Verdana, sans-serif;
@@ -73,9 +91,9 @@ body {
   background: no-repeat url(/img/download.png) left center;
 }
 
-/* END index.html */
+/* END INDEX.HTML */
 
-/* article.html */
+/* ARTICLE.HTML */
 
 h1,
 p,
@@ -83,7 +101,7 @@ h2,
 ul,
 h3,
 figure {
- margin: 0;
+  margin: 0;
 }
 
 h2,
@@ -214,6 +232,63 @@ figure figcaption {
 
 .container img:not(.figure-image) {
   margin-bottom: 40px;
-
-  /* END article.html */
 }
+
+/* END ARTICLE.HTML */
+
+/* MODULES.HTML */
+
+.modules-container {
+  margin: 0 auto;
+  width: 1170px;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+}
+
+.top {
+  margin-bottom: 50px;
+  padding-top: 50px;
+
+  color: #3F2AFF;
+}
+
+.top__logo, .top__home {
+  margin-bottom: 25px;
+}
+
+.top__title {
+  margin-bottom: 0;
+
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+}
+
+.cards {
+  padding: 0;
+  margin-bottom: 50px;
+
+  font-size: 0;
+}
+
+.cards__item {
+  display: inline-block;
+  width: 572px;
+}
+
+.cards__item:nth-child(odd) {
+  margin-right: 25px;
+}
+
+.cards__bottom {
+  padding: 25px
+}
+
+.cards__title {
+  font: 700 40px/47px "Roboto";
+
+  color: #3F2AFF;
+}
+
+/* END MODULES.HTML */

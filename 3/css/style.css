@@ -71,8 +71,7 @@ body {
 }
 
 h1, p, h2, ul, h3, figure {
-  margin-top: 0;
-  margin-left: 0;
+  margin: 0;
 }
 
 h1 {
@@ -84,18 +83,18 @@ p {
   width: 872px;
 }
 
-.container__item--gray {
+.container__gray {
   border-radius: 20px;
   padding: 30px;
   background-color: #f3f3f3;
 }
 
-.container__item--gray:not(:last-child) {
+.container__gray:not(:last-child) {
   margin-bottom: 40px;
 }
 
-.container__item--gray p {
-  width: 692;
+.container__gray p {
+  width: 692px;
   margin-bottom: 10px;
 }
 
@@ -118,7 +117,7 @@ h2, h3 {
 figure {
   display: inline-block;
   margin-bottom: 40px;
-  widows: 872px;
-};
+  width: 872px;
+}
 
 /* END article.html */
