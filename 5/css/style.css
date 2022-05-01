@@ -275,6 +275,12 @@ figure figcaption {
 .cards__item {
   display: inline-block;
   width: 572px;
+  min-height: 507px;
+
+  vertical-align: top;
+
+  background-color: #fff;
+  filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.1));
 }
 
 .cards__item:nth-child(odd) {
@@ -286,9 +292,20 @@ figure figcaption {
 }
 
 .cards__title {
+  margin-bottom: 0;
   font: 700 40px/47px "Roboto";
 
   color: #3F2AFF;
+}
+
+.cards__description {
+  padding: 0;
+
+  font: 400 20px/165% "Roboto";
+
+  list-style: none;
+  color: #333333;
+
 }
 
 /* END MODULES.HTML */
