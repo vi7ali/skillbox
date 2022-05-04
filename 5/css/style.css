@@ -132,7 +132,7 @@ figure {
 }
 
 figure figcaption {
-  padding: 10px 0;
+  padding: 19px 0;
 
   font-weight: 400;
   font-size: 14px;
@@ -286,7 +286,7 @@ figure figcaption {
   filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.1));
 }
 
-/* Cards background placement to work with filter */
+/* Cards background placement to work with filter: drop-shadow */
 
 .cards__item::before {
   content: "";
@@ -335,7 +335,7 @@ figure figcaption {
   color: #3F2AFF;
 }
 
-.cards__description {
+.cards__desc {
   padding: 0;
 
   font: 400 20px/165% "Roboto";
@@ -357,7 +357,9 @@ figure figcaption {
 }
 
 
-.button {
+.btn {
+  display: block;
+
   width: 274px;
   height: 70px;
   margin: 0 auto 50px;
@@ -367,7 +369,9 @@ figure figcaption {
   text-align: center;
 
   cursor: pointer;
+  border: none;
   outline: 2px solid #3F2AFF;
   color: #3F2AFF;
+  background: transparent;
 }
 /* END MODULES.HTML */
