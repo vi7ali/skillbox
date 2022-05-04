@@ -251,12 +251,16 @@ figure figcaption {
   color: #3F2AFF;
 }
 
-.top__logo {
-  display: inline-block;
-}
-
 .top__logo, .top__home {
   margin-bottom: 25px;
+}
+
+.top__home {
+  display: inline-block;
+
+  padding-left: 52px;
+
+  background: left / 45px no-repeat url(/img/arrow.svg);
 }
 
 .top__title {
@@ -355,7 +359,6 @@ figure figcaption {
 
   color: #EAEAEA;
 }
-
 
 .btn {
   display: block;
