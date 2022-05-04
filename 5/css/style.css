@@ -251,6 +251,10 @@ figure figcaption {
   color: #3F2AFF;
 }
 
+.top__logo {
+  display: inline-block;
+}
+
 .top__logo, .top__home {
   margin-bottom: 25px;
 }
@@ -282,6 +286,36 @@ figure figcaption {
   filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.1));
 }
 
+/* Cards background placement to work with filter */
+
+.cards__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+}
+
+.cards__item--bg1::before {
+  background: url(/img/intro-opt.jpg);
+}
+
+.cards__item--bg2::before {
+  background: url(/img/html-opt.jpg);
+}
+
+.cards__item--bg3::before  {
+  background: url(/img/css-opt.jpg);
+}
+
+.cards__item--bg4::before  {
+  background: url(/img/layout-opt.jpg);
+}
+
+/* END Cards background placement */
+
 .cards__item:nth-child(odd) {
   margin-right: 25px;
 }
@@ -290,8 +324,8 @@ figure figcaption {
   margin-bottom: 25px;
 }
 
-.cards__bottom {
-  padding: 25px
+.cards__content {
+  padding: 205px 25px 25px 25px;
 }
 
 .cards__title {
@@ -321,6 +355,7 @@ figure figcaption {
 
   color: #EAEAEA;
 }
+
 
 .button {
   width: 274px;
