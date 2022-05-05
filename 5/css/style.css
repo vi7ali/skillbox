@@ -350,26 +350,24 @@ figure figcaption {
 
 .cards__num {
   position: absolute;
-  bottom: 0;
-  right: 0;
-
-  margin: 0 25px 25px 0;
+  bottom: 25px;
+  right: 25px;
 
   font: 400 40px/47px "Roboto";
 
   color: #EAEAEA;
 }
 
-.btn {
-  display: block;
+.btn-center {
+  margin: 0 auto;
+  padding-bottom: 50px;
+  text-align: center;
+}
 
-  width: 274px;
-  height: 70px;
-  margin: 0 auto 50px;
-  padding: 25px 0;
+.btn {
+  padding: 25px 75px;
 
   font: 700 18px/21px "Roboto";
-  text-align: center;
 
   cursor: pointer;
   border: none;
