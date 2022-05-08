@@ -32,11 +32,13 @@ body {
 .list-reset {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
 .btn-reset {
   padding: 0;
+
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -118,7 +120,9 @@ body {
 
 .offer {
   flex-direction: column;
+  align-items: flex-start;
   padding: 40px 0px 40px 40px;
+
   outline: 1px solid coral;
 }
 
@@ -172,6 +176,7 @@ body {
   flex-direction: column;
   max-width: 573px;
   padding: 191px 126px 50px 45px;
+
   outline: 1px solid coral;
 }
 
@@ -208,6 +213,7 @@ body {
 .advantages__item {
   max-width: 275px;
   padding: 116px 42px 41px 45px;
+
   outline: 1px solid coral;
 }
 
@@ -243,6 +249,7 @@ body {
 .accomodation__item {
   max-width: 374px;
   flex-grow: 1;
+
   outline: 1px solid coral;
 }
 
