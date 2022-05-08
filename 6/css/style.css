@@ -55,6 +55,7 @@ body {
 .section__title {
   margin: 0;
   padding-left: 45px;
+  padding-top: 70px;
 }
 
 /* END GLOBAL CLASSES */
@@ -63,7 +64,6 @@ body {
 
 .header {
   padding-top: 30px;
-  margin-bottom: 70px;
 }
 
 .header-container {
@@ -107,7 +107,8 @@ body {
 }
 
 .special__left-cont, .special__right-cont {
-  width: 573px;
+  max-width: 573px;
+  flex-grow: 1;
 }
 
 .special__left-cont {
@@ -136,11 +137,155 @@ body {
   margin-bottom: 15px;
 }
 
-.special__content  {
-  margin-bottom: 23px;
-}
-
 .offer__price {
   margin-bottom: 47px;
 }
 
+/* END Special */
+
+/* About */
+
+.about__title {
+  margin: 0;
+  margin-bottom: 11px;
+}
+
+.about__desc {
+  max-width: 888px;
+  margin: 0;
+}
+
+/* END About */
+
+/* SERVICES */
+
+.services__title {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.services__list {
+  flex-wrap: wrap;
+}
+
+.services__item {
+  flex-direction: column;
+  max-width: 573px;
+  padding: 191px 126px 50px 45px;
+  outline: 1px solid coral;
+}
+
+.services__item:not(:nth-child(2n)) {
+  margin-right: 23px;
+}
+
+.services__item:nth-child(-n+2) {
+  margin-bottom: 23px;
+}
+
+.service__title {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.service__desc {
+  margin: 0;
+}
+
+/* END Services */
+
+/* Advantages */
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.advantages__list {
+  flex-wrap: wrap;
+}
+
+.advantages__item {
+  max-width: 275px;
+  padding: 116px 42px 41px 45px;
+  outline: 1px solid coral;
+}
+
+.advantages__item:not(:nth-child(4n)) {
+  margin-right: 23px;
+}
+
+.advantages__item:nth-child(-n+4) {
+  margin-bottom: 23px;
+}
+
+.advantages__desc {
+  margin: 0;
+}
+
+/* END Advantages */
+
+/* Accomodation */
+
+.accomodation {
+  padding-bottom: 70px;
+}
+
+.accomodation__title {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.accomodation__list {
+  flex-wrap: wrap;
+}
+
+.accomodation__item {
+  max-width: 374px;
+  flex-grow: 1;
+  outline: 1px solid coral;
+}
+
+.accomodation__item:not(:nth-child(3n)) {
+  margin-right: 23px;
+}
+
+.accomodation__item:nth-child(-n+6) {
+  margin-bottom: 23px;
+}
+
+.hotel__photo {
+  display: block;
+}
+
+.hotel__title {
+  margin: 0;
+}
+
+.hotel__bottom {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 36px 45px 41px;
+}
+
+.hotel__price,
+.hotel__title,
+.hotel__location {
+  margin-bottom: 16px;
+}
+
+.hotel__price {
+  width: 100%;
+}
+
+.hotel__stars {
+  margin-left: auto;
+}
+
+.accomodation__all {
+  flex-direction: column-reverse;
+  padding-bottom: 27px;
+  align-items: center;
+}
+
+/* END Accomodation */
