@@ -546,6 +546,51 @@
         </ul> <!-- /.accomodation__list -->
       </div> <!-- /.container -->
     </section> <!-- /.accomodation -->
+
+    <section class="tour">
+      <div class="container tour__container">
+        <h2 class="section__title tour__title">
+          Хочу тур
+        </h2>
+
+        <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="tour__form">
+          <div class="form__wrapper flex">
+            <div class="form__item flex">
+              <label class="tour__label" for="departure">Город вылета</label>
+              <input class="tour__input tour__city" id="departure" type="text" name="departure" value="Санкт-Петербург" required>
+            </div>
+
+            <div class="form__item flex">
+              <label class="tour__label" for="destination">Страна</label>
+              <input class="tour__input tour__city" id="destination" type="text" name="destination" value="Австралия" required>
+            </div>
+
+            <div class="form__item flex">
+              <label class="tour__label" for="date">Дата прибытия</label>
+              <input class="tour__input tour__date" id="date" type="text" name="date" value="18.10.2018" required>
+            </div>
+
+            <div class="form__item flex">
+              <label class="tour__label" for="nights">Ночей</label>
+              <input class="tour__input tour__nights" id="nights" type="number" name="nights" required min="1" max="30" value="6">
+            </div>
+
+            <div class="form__item flex">
+              <label class="tour__label" for="guests">Туристы</label>
+              <input class="tour__input tour__guests" id="guests" type="number" name="guests" required min="1" max="10" value="2">
+            </div>
+
+            <div class="form__item">
+              <button class="btn-reset tour__btn">
+                Найти
+              </button>
+            </div>
+          </div> <!-- /.form__wrapper -->
+        </form>
+      </div> <!-- /.container -->
+    </section> <!-- /.tour -->
+
+    <section class+"" ></section>
   </main>
   <footer class="footer"></footer>
 </body>

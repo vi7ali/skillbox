@@ -540,9 +540,9 @@ body {
 
 /* Accomodation */
 
-.accomodation {
+/* .accomodation {
   padding-bottom: 70px;
-}
+} */
 
 .accomodation__title {
   margin: 0;
@@ -694,3 +694,118 @@ body {
 }
 
 /* END Accomodation */
+
+/* Tour */
+
+.tour {
+  padding-top: 70px;
+}
+
+.tour__container {
+  padding: 38px 45px 71px;
+
+  background: #E9E9E9;
+  border-radius: 15px;
+}
+
+.tour__title {
+  padding: 0;
+  margin-bottom: 19px;
+
+  color: #000;
+}
+
+.form__wrapper {
+  padding: 28px;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+
+  background: #FFFFFF;
+  border-radius: 15px;
+}
+
+.form__item {
+  flex-direction: column;
+}
+
+.form__item:not(:first-child) {
+  padding-left: 20px;
+}
+
+.form__item:not(:last-child) {
+  padding-right: 20px;
+
+  border-right: 1px solid #E1E1E1;
+}
+
+.tour__label {
+  margin-bottom: 15px;
+
+  font-size: 12px;
+  line-height: 12px;
+
+  color: #000;
+}
+
+.tour__input {
+  font-size: 16px;
+  line-height: 16px;
+
+  border: none;
+  color: #000;
+}
+
+.tour__city {
+  width: 169px;
+
+  background-image: url("/img/triang.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.tour__date, .tour__nights, .tour__guests {
+  width: 121px;
+}
+
+.tour__date {
+  background-image: url("/img/cal.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.tour__nights {
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.tour__guests {
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.tour__btn {
+  padding: 13px 20px;
+  min-width: 108px;
+
+  font-size: 16px;
+  line-height: 16px;
+
+  color: #CC9933;
+  outline: 1px solid #CC9933;
+  border-radius: 10px;
+}
+
+.tour__btn:hover {
+  background-color: #CC9933;
+  color: #FFF;
+}
+
+.tour__btn:focus {
+  background-color: #CC9933;
+  color: #FFF;
+}
+
+.tour__btn:active {
+  background-color: #A47312;
+  color: #FFF;
+}
+
+/* END Tour */
