@@ -849,10 +849,12 @@ body {
 
 .contacts__phones {
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .contacts__email {
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .contacts__label {
@@ -941,6 +943,7 @@ body {
 
 .footer__copy {
   flex-direction: column;
+  align-items: flex-start;
   margin-right: 102px;
 
   max-width: 320px;
@@ -957,11 +960,15 @@ body {
 
 .footer__contacts {
   flex-direction: column;
+  align-items: flex-start;
+
   max-width: 358px;
 }
 
 .footer__address {
   margin-bottom: 15px;
+
+  font-style: normal;
 }
 
 .footer__phones, .footer__links {
