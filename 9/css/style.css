@@ -820,21 +820,16 @@ body {
 }
 
 .contacts__content {
-  flex-direction: column;
   padding: 46px;
-
+  width: 100%;
   background-color: #FFF;
   border-radius: 15px;
-
-  background-image: url("/img/contacts-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: right 44px center;
 }
 
 .contacts__list {
+  margin-right: 50px;
   max-width: 375px;
   flex-direction: column;
-  margin-bottom: 45px;
 }
 
 .contacts__item {
@@ -845,6 +840,15 @@ body {
 
 .contacts__item:not(:last-child) {
   margin-bottom: 25px;
+}
+
+.contacts__item:last-child {
+  flex-grow: 1;
+
+  padding-top: 20px;
+  padding-bottom: 0;
+
+  border: none;
 }
 
 .contacts__phones {
@@ -895,6 +899,7 @@ body {
 }
 
 .contacts__btn {
+  align-self: flex-end;
   padding: 27px 29px;
   max-width: 213px;
 
@@ -920,6 +925,11 @@ body {
 .contacts__btn:active {
   background-color: #A47312;
   color: #FFF;
+}
+
+.contacts__bg {
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 /* END Contacts */
