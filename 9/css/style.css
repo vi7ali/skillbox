@@ -715,9 +715,11 @@ body {
 }
 
 .form__wrapper {
-  padding: 28px;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: nowrap;
+
+  padding: 28px;
 
   background: #FFFFFF;
   border-radius: 15px;
@@ -747,29 +749,29 @@ body {
 }
 
 .tour__input {
+  appearance: none;
+
+  padding: 0;
+
   font-size: 16px;
   line-height: 16px;
 
   border: none;
   color: #000;
+
+  background-color: transparent;
 }
 
 .tour__city {
   width: 169px;
-
-  background-image: url("/img/triang.svg");
-  background-repeat: no-repeat;
-  background-position: right center;
 }
 
 .tour__date, .tour__nights, .tour__guests {
   width: 121px;
 }
 
-.tour__date {
-  background-image: url("/img/cal.svg");
-  background-repeat: no-repeat;
-  background-position: right top;
+.tour__date::-webkit-calendar-picker-indicator {
+  opacity: 0;
 }
 
 .tour__nights {
@@ -806,6 +808,45 @@ body {
   background-color: #A47312;
   color: #FFF;
 }
+
+.input-container {
+  align-items: center;
+}
+
+.input-container__item {
+  z-index: 10;
+}
+
+.input-container__item--behind {
+  z-index: 1;
+}
+
+.input-container__arrow {
+  margin-left: -10px;
+  fill: #000;
+}
+
+.input-container__cal {
+  margin-left: -16px;
+  fill: #000;
+}
+
+/* TEST HOVER */
+
+/* .input-container:hover .input-container__arrow {
+  fill: red;
+}
+
+.input-container:hover .input-container__cal {
+  fill: red;
+}
+
+.input-container:hover .tour__input{
+  color: red;
+} */
+
+/* END TEST HOVER */
+
 
 /* END Tour */
 

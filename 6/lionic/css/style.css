@@ -124,6 +124,7 @@ body {
   font-weight: 600;
   color: #1C1C1C;
   font-size: 15px;
+  transition: color 300ms ease-in-out;
 }
 
 .header-link:focus {
@@ -144,6 +145,7 @@ body {
   height: 2px;
   background-color: #3474BA;
   opacity: 0;
+  transition: opacity 300ms ease-in-out;
 }
 
 .header-link:active {
@@ -168,6 +170,7 @@ body {
   color: #fff;
   background: #3172B9;
   border-radius: 3px;
+  transition: background-color 300ms ease-in-out;
 }
 
 .btn::after {
@@ -181,6 +184,7 @@ body {
   border: 1px solid #71A7E2;
   outline: none;
   opacity: 0;
+  transition: opacity 300ms ease-in-out;
 }
 
 .btn:focus::after {
@@ -300,6 +304,8 @@ body {
   width: 270px;
   border: 1px solid #E4E4E4;
   border-radius: 5px;
+  transition: border-color 300ms ease-in-out,
+              background-color 300ms ease-in-out;
 }
 
 .services-item:hover {
@@ -319,6 +325,11 @@ body {
   margin-bottom: 25px;
 }
 
+.services-item-icon path {
+  fill: #3172B9;
+  transition: fill 300ms ease-in-out;
+}
+
 .services-item:hover .services-item-icon path {
   fill: #FFF;
 }
@@ -332,6 +343,8 @@ body {
   line-height: 130%;
 
   color: #1C1C1C;
+
+  transition: color 300ms ease-in-out;
 }
 
 .services-item-desc {
@@ -343,6 +356,8 @@ body {
   line-height: 150%;
 
   color: #787878;
+
+  transition: color 300ms ease-in-out;
 }
 
 .services-item:hover .services-item-desc {
@@ -391,6 +406,8 @@ body {
   line-height: 150%;
 
   color: #787878;
+
+  transition: color 300ms ease-in-out;
 }
 
 .blog-preview-title {
@@ -401,6 +418,8 @@ body {
   line-height: 130%;
 
   color: #1C1C1C;
+
+  transition: color 300ms ease-in-out;
 }
 
 .blog-preview-desc {
@@ -411,12 +430,16 @@ body {
   line-height: 150%;
 
   color: #787878;
+
+  transition: color 300ms ease-in-out;
 }
 
 .blog-preview-link {
   display: flex;
   position: relative;
   width: 100%;
+
+  transition: background-color 300ms ease-in-out;
 }
 
 .blog-preview-link:focus {
@@ -589,6 +612,8 @@ body {
   line-height: 180%;
 
   color: #787878;
+
+  transition: color 300ms ease-in-out;
 }
 
 .contacts-item-link:focus {
@@ -662,6 +687,7 @@ body {
 
   border: 1px solid #DADADA;
   border-radius: 50px;
+  transition: border-color 300ms ease-in-out, background-color 300ms ease-in-out;
 }
 
 .form-input:nth-child(-n+2) {
@@ -689,6 +715,8 @@ body {
 
   border: 1px solid #DADADA;
   border-radius: 50px;
+
+  transition: border-color 300ms ease-in-out, background-color 300ms ease-in-out;
 }
 
 .form-select:focus {
@@ -714,6 +742,8 @@ body {
   border-radius: 20px;
 
   resize: none;
+
+  transition: border-color 300ms ease-in-out, background-color 300ms ease-in-out;
 }
 
 .form-textarea:focus {
@@ -803,6 +833,38 @@ body {
   line-height: 20px;
 
   color: #787878;
+
+  transition: color 300ms ease-in-out;
+}
+
+.footer-link:focus {
+  outline: 1px solid #71A7E2;
+  outline-offset: 2px;
+}
+
+.footer-link:hover{
+  color: #71A7E2;
+}
+
+.footer-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #3474BA;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.footer-link:active {
+  color: #3172B9;
+  outline: none;
+}
+
+.footer-link:active::after {
+  opacity: 1;
 }
 
 .footer-nav {
@@ -823,11 +885,13 @@ body {
 
 .social-link svg {
   fill: #000;
+  transition: fill 300ms ease-in-out;
 }
 
 .social-link-mail svg {
   fill: transparent;
   stroke: #000;
+  transition: stroke 300ms ease-in-out;
 }
 
 .social-link:focus {
