@@ -559,8 +559,9 @@
               <label class="tour__label" for="departure">Город вылета</label>
               <ul class="input-container list-reset flex">
                 <li class="input-container__item">
-                  <select id="departure" class="tour__input tour__city"  type="text" name="departure" placeholder="Санкт-Петербург" required>
-                    <option value="Санкт-Петербург">Санкт-Петербург</option>
+                  <select id="departure" class="tour__input tour__city"  name="departure" required>
+                    <option value="" disabled hidden>Выбрать город</option>
+                    <option value="Санкт-Петербург" selected>Санкт-Петербург</option>
                     <option value="Новосибирск">Новосибирск</option>
                     <option value="Норильск">Норильск</option>
                     <option value="Красноярск">Красноярск</option>
@@ -580,8 +581,9 @@
               <label class="tour__label" for="destination">Страна</label>
               <ul class="input-container list-reset flex">
                 <li class="input-container__item">
-                  <select class="tour__input tour__city" id="destination" type="text" name="departure" placeholder="Австралия" required>
-                    <option value="Австралия">Австралия</option>
+                  <select class="tour__input tour__city" id="destination" name="departure" required>
+                    <option value="" disabled hidden>Выбрать страну</option>
+                    <option value="Австралия selected">Австралия</option>
                     <option value="Испания">Испания</option>
                     <option value="Куба">Куба</option>
                     <option value="Мальдивы">Мальдивы</option>

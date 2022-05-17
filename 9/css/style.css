@@ -766,12 +766,12 @@ body {
   width: 169px;
 }
 
-.tour__date, .tour__nights, .tour__guests {
-  width: 121px;
-}
-
 .tour__date::-webkit-calendar-picker-indicator {
   opacity: 0;
+}
+
+.tour__date, .tour__nights, .tour__guests {
+  width: 121px;
 }
 
 .tour__nights {
