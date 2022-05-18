@@ -557,58 +557,31 @@
           <div class="form__wrapper flex">
             <div class="form__item flex">
               <label class="tour__label" for="departure">Город вылета</label>
-              <ul class="input-container list-reset flex">
-                <li class="input-container__item">
-                  <select id="departure" class="tour__input tour__city"  name="departure" required>
-                    <option value="" disabled hidden>Выбрать город</option>
-                    <option value="Санкт-Петербург" selected>Санкт-Петербург</option>
-                    <option value="Новосибирск">Новосибирск</option>
-                    <option value="Норильск">Норильск</option>
-                    <option value="Красноярск">Красноярск</option>
-                    <option value="Чита">Чита</option>
-                    <option value="Уссурийск">Уссурийск</option>
-                  </select>
-                </li>
-                <li class="input-container__item--behind">
-                  <svg class="input-container__arrow" width="10" height="6" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 6L10 0H0L5 6Z"/>
-                  </svg>
-                </li>
-              </ul>
+              <select id="departure" class="tour__input tour__city"  name="departure" required>
+                <option value="" disabled hidden>Выбрать город</option>
+                <option value="Санкт-Петербург" selected>Санкт-Петербург</option>
+                <option value="Новосибирск">Новосибирск</option>
+                <option value="Норильск">Норильск</option>
+                <option value="Красноярск">Красноярск</option>
+                <option value="Чита">Чита</option>
+                <option value="Уссурийск">Уссурийск</option>
+              </select>
             </div>
 
             <div class="form__item flex">
               <label class="tour__label" for="destination">Страна</label>
-              <ul class="input-container list-reset flex">
-                <li class="input-container__item">
-                  <select class="tour__input tour__city" id="destination" name="departure" required>
-                    <option value="" disabled hidden>Выбрать страну</option>
-                    <option value="Австралия selected">Австралия</option>
-                    <option value="Испания">Испания</option>
-                    <option value="Куба">Куба</option>
-                    <option value="Мальдивы">Мальдивы</option>
-                  </select>
-                </li>
-                <li class="input-container__item--behind">
-                  <svg class="input-container__arrow" width="10" height="6" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 6L10 0H0L5 6Z"/>
-                  </svg>
-                </li>
-              </ul>
+              <select class="tour__input tour__city" id="destination" name="departure" required>
+                <option value="" disabled hidden>Выбрать страну</option>
+                <option value="Австралия selected">Австралия</option>
+                <option value="Испания">Испания</option>
+                <option value="Куба">Куба</option>
+                <option value="Мальдивы">Мальдивы</option>
+              </select>
             </div>
 
             <div class="form__item flex">
               <label class="tour__label" for="date">Дата прибытия</label>
-              <ul class="input-container list-reset flex">
-                <li class="input-container__item">
-                  <input class="tour__input tour__date" id="date" type="date" name="date" value="2018-10-18" required>
-                </li>
-                <li class="input-container__item--behind">
-                  <svg class="input-container__cal" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14.6666 2.00008H12.6666V0.666748H11.3333V2.00008H4.66665V0.666748H3.33331V2.00008H1.33331V15.3334H14.6666V2.00008ZM13.3333 14.0001H2.66665V5.33341H13.3333V14.0001Z"/>
-                  </svg>
-                </li>
-              </ul>
+              <input class="tour__input tour__date" id="date" type="date" name="date" value="2018-10-18" required>
             </div>
 
             <div class="form__item flex">

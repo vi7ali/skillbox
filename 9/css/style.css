@@ -749,8 +749,6 @@ body {
 }
 
 .tour__input {
-  appearance: none;
-
   padding: 0;
 
   font-size: 16px;
@@ -764,10 +762,6 @@ body {
 
 .tour__city {
   width: 169px;
-}
-
-.tour__date::-webkit-calendar-picker-indicator {
-  opacity: 0;
 }
 
 .tour__date, .tour__nights, .tour__guests {
@@ -808,45 +802,6 @@ body {
   background-color: #A47312;
   color: #FFF;
 }
-
-.input-container {
-  align-items: center;
-}
-
-.input-container__item {
-  z-index: 10;
-}
-
-.input-container__item--behind {
-  z-index: 1;
-}
-
-.input-container__arrow {
-  margin-left: -10px;
-  fill: #000;
-}
-
-.input-container__cal {
-  margin-left: -16px;
-  fill: #000;
-}
-
-/* TEST HOVER */
-
-/* .input-container:hover .input-container__arrow {
-  fill: red;
-}
-
-.input-container:hover .input-container__cal {
-  fill: red;
-}
-
-.input-container:hover .tour__input{
-  color: red;
-} */
-
-/* END TEST HOVER */
-
 
 /* END Tour */
 
