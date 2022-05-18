@@ -1,3 +1,16 @@
+:root {
+  --main-yellow: #CC9933;
+  --active-yellow: #A47312;
+  --hover-yellow: #E9C379;
+  --hover-yellow-2: #E9C479;
+  --separator-color: #E1E1E1;
+  --main-gray: #999;
+  --main-color-white: #fff;
+  --main-color-black: #000;
+  --gap: 23px;
+  --main-font-size: 16px;
+}
+
 html {
   box-sizing: border-box;
   line-height: 1;
@@ -57,20 +70,6 @@ body {
 }
 
 /* GLOBAL CLASSES / VARIABLES */
-
-:root {
-  --main-yellow: #CC9933;
-  --active-yellow: #A47312;
-  --hover-yellow: #E9C379;
-  --hover-yellow-2: #E9C479;
-  --separator-color: #E1E1E1;
-  --main-gray: #999;
-  --main-color-white: #fff;
-  --main-color-black: #000;
-  --gap: 23px;
-  --main-font-size: 16px;
-}
-
 
 .visibility--hidden {
   font-size: 0;
