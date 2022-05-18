@@ -1006,6 +1006,22 @@ body {
   line-height: 150%;
 
   color: var(--main-yellow);
+
+  transition: color 0.3s ease-in-out;
+}
+
+.contacts__link:focus {
+  outline: 1px solid var(--main-yellow);
+  outline-offset: 3px;
+}
+
+.contacts__link:hover {
+  color: var(--hover-yellow);
+}
+
+.contacts__link:active {
+  outline: none;
+  color: var(--active-yellow);
 }
 
 .contacts__desc {
