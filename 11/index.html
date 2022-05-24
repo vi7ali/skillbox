@@ -3,32 +3,236 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Евклид</title>
 </head>
 <body>
   <header class="header">
-    <div class="container">
-      <div class="header__container flex">
+    <div class="header__container flex">
+      <a href="#">
         <img src="img/logo.svg" alt="Logo" class="header__logo">
-        <ul class="header__list">
-          <div class="header__item">
-          </div>
-          <div class="header__item">
-          </div>
-          <div class="header__item">
-          </div>
-          <div class="header__item">
-          </div>
-          <div class="header__item">
-          </div>
-          <div class="header__item">
-          </div>
-        </ul>
-      </div>
-    </div>
+      </a>
+
+      <ul class="header__list list-reset flex">
+        <li class="header__item">
+          <a href="" class="header__link">О нас</a>
+        </li>
+
+        <li class="header__item">
+          <a href="" class="header__link">Проекты</a>
+        </li>
+
+        <li class="header__item">
+          <a href="" class="header__link">Этапы</a>
+        </li>
+
+        <li class="header__item">
+          <a href="" class="header__link">Отзывы</a>
+        </li>
+
+        <li class="header__item">
+          <a href="" class="header__link">Контакты</a>
+        </li>
+
+        <li class="header__item">
+          <a href="" class="header__search">
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)"/>
+              <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke-width="2"/>
+            </svg>
+          </a>
+        </li>
+
+      </ul>
+
+    </div> <!-- /.header__container -->
   </header>
+
+  <main class="main">
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero__container flex">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              Проектные решения любой сложности
+            </h1>
+            <p class="hero__desc">
+              Есть над чем задуматься: базовые сценарии поведения пользователей и&nbsp;по&nbsp;сей день остаются уделом проектантов
+            </p>
+            <button class="btn-reset btn hero__btn">
+              Заказать расчёт
+            </button>
+          </div> <!-- /.hero__content -->
+
+          <ul class="bullets list-reset flex">
+            <li class="bullets__item bullets__item--active">
+              <a href="#" class="bullets__link">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="7.5" cy="7.5" r="7.5" fill="white"/>
+                </svg>
+              </a>
+            </li>
+            <li class="bullets__item">
+              <a href="#" class="bullets__link">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="7.5" cy="7.5" r="7.5" fill="white"/>
+                </svg>
+              </a>
+            </li>
+            <li class="bullets__item">
+              <a href="#" class="bullets__link">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="7.5" cy="7.5" r="7.5" fill="white"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div> <!-- /.hero__container -->
+      </div>  <!-- /.container -->
+    </section> <!-- /.hero -->
+
+
+    <section class="about">
+      <div class="container about__container flex">
+        <h2 class="section-title about__title">
+          О&nbsp;нас
+        </h2>
+
+        <p class="main-text about__desc">
+          Также как перспективное планирование создаёт необходимость включения в&nbsp;производственный план целого ряда
+          внеочередных мероприятий с&nbsp;учётом комплекса экспериментов, поражающих по&nbsp;своей масштабности
+          и&nbsp;грандиозности. А&nbsp;также диаграммы связей могут быть описаны максимально подробно. Мы&nbsp;вынуждены
+          отталкиваться от&nbsp;того, что убеждённость некоторых оппонентов требует от&nbsp;нас анализа как самодостаточных, так
+          и&nbsp;внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта
+          предопределяет высокую востребованность позиций, занимаемых участниками в&nbsp;отношении поставленных задач.
+          Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что высококачественный прототип будущего проекта способствует повышению
+          качества экспериментов.
+        </p>
+
+        <div class="cards flex">
+          <div class="cards__left flex">
+            <div class="cards__content--left flex">
+              <p class="cards__desc--left">
+                Принимая во&nbsp;внимание показатели успешности, перспективное планирование способствует подготовке и&nbsp;реализации
+                новых принципов.
+              </p>
+
+              <button class="btn-reset btn cards__btn">
+                Подробнее
+              </button>
+            </div>
+          </div>
+
+          <div class="cards__right flex">
+            <div class="card">
+              <div class="cards__content--right flex">
+                <div class="card__left">
+                  <img src="img/about-card-1.svg" alt="">
+                </div>
+
+                <div class="card__right">
+                  <h3 class="card__title">
+                    Консультация с&nbsp;широким активом
+                  </h3>
+
+                  <p class="main-text">
+                    А&nbsp;также свежий взгляд на&nbsp;привычные вещи&nbsp;- безусловно открывает новые горизонты для как
+                    самодостаточных, так и&nbsp;внешне зависимых концептуальных решений.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="cards__content--right flex">
+                <div class="card__left">
+                  <img src="img/about-card-2.svg" alt="">
+                </div>
+
+                <div class="card__right">
+                  <h3 class="card__title">
+                    В&nbsp;своём стремлении повысить
+                  </h3>
+
+                  <p class="main-text">
+                    Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный эксперимент проверки
+                    прогресса профессионального сообщества.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div> <!-- /.cards__right -->
+        </div> <!-- /.cards -->
+      </div> <!-- /.about__container -->
+    </section> <!-- /.about -->
+
+    <section class="how">
+      <div class="container how__container flex">
+        <h2 class="section-title how__title">
+          Как мы&nbsp;работаем
+        </h2>
+
+        <ul class="list-reset how__steps flex">
+          <li class="how__item">
+            <a href="#" class="how__link how__link--active">
+              1 шаг
+            </a>
+          </li>
+          <li class="how__item">
+            <a href="#" class="how__link">
+              2 шаг
+            </a>
+          </li>
+          <li class="how__item">
+            <a href="#" class="how__link">
+              3 шаг
+            </a>
+          </li>
+          <li class="how__item">
+            <a href="#" class="how__link">
+              4 шаг
+            </a>
+          </li>
+        </ul>
+
+        <h3 class="how__subtitle">
+          Проводим консультацию
+        </h3>
+
+        <p class="how__desc main-text">
+          Влечет за&nbsp;собой процесс внедрения и&nbsp;модернизации приоритизации разума над эмоциями. В&nbsp;рамках спецификации
+          современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими
+          инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически,
+          ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с&nbsp;зарубежных
+          источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить
+          традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в&nbsp;целом, однако
+          конкретные выводы, разумеется, призваны к&nbsp;ответу.
+        </p>
+
+        <div class="how__btns flex">
+          <button class="btn-reset btn how__btn how__btn--active">
+            Подробнее
+          </button>
+
+          <button class="btn-reset btn how__btn">
+            Договор
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container">
+        <h2 class="section-title">
+          Часто задаваемые вопросы
+        </h2>
+      </div>
+    </section>
+
+  </main>
 
 </body>
 </html>
