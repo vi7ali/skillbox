@@ -600,3 +600,16 @@ body {
   background-color: #E1670E;
   color: #FFFFFF;
 }
+
+/* END HOW */
+
+/* FAQ */
+.faq__title {
+  margin-bottom: 32px;
+
+}
+
+.faq__content {
+  flex-direction: column;
+  width: 100%;
+}
