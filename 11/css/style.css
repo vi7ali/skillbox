@@ -605,11 +605,115 @@ body {
 
 /* FAQ */
 .faq__title {
-  margin-bottom: 32px;
-
+  margin-bottom: 43px;
 }
 
 .faq__content {
   flex-direction: column;
   width: 100%;
+  font-size: 0;
+
+  margin-bottom: 101px;
 }
+
+.faq__link {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  padding: 30px 0;
+  padding-bottom: 29px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+
+  border: 1px solid #CACACA;
+  border-left: none;
+  border-right: none;
+
+  color: #333;
+
+  transition: color 0.3s ease-in-out,
+              border-color 0.3s ease-in-out;
+}
+
+.faq__icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.faq__icon ellipse {
+  fill: #ECECEC;
+  transition: fill 0.3s ease-in-out;
+}
+
+.faq__icon path {
+  fill: #666;
+  transition: fill 0.3s ease-in-out;
+}
+
+.faq__link:focus {
+  border-color: #FF9900;
+  color: #FF9900;
+}
+
+.faq__link:focus ellipse {
+  fill: #FF9900;
+}
+
+.faq__link:focus path {
+  fill: #FFF;
+}
+
+.faq__link:hover {
+  border-color: #FF9900;
+  color: #FF9900;
+}
+
+.faq__link:hover ellipse {
+  fill: #FF9900;
+}
+
+.faq__link:hover path {
+  fill: #FFF;
+}
+
+.faq__link:active {
+  color: #333;
+  border-color: #CACACA;
+}
+
+.faq__link:active .faq__icon {
+  transform: rotate(45deg);
+}
+
+.faq__link:active ellipse {
+  fill: #ECECEC;
+}
+
+.faq__link:active path {
+  fill: #666;
+}
+
+.faq__text--gray {
+  color: #CACACA;
+}
+
+/* END FAQ */
+
+/* Footer */
+
+.footer {
+  background-color: #222;
+}
+
+.footer__container {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footer__left, .footer__midlle, .footer__right {
+  flex-direction: column;
+}
+
+/* END Footer */
