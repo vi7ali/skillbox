@@ -89,10 +89,13 @@ div {
 }
 
 body {
-  min-width: 768px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   background-color: #FFF;
+}
+
+.burger {
+  display: none;
 }
 
 .flex {
@@ -115,8 +118,8 @@ body {
 }
 
 .container {
-  max-width: 1770px;
-  padding: 0;
+  max-width: 1870px;
+  padding: 0 50px;
   margin: 0 auto;
 }
 
@@ -151,19 +154,18 @@ body {
 }
 
 .header__container {
-  max-width: 1772px;
+  max-width: 1872px;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 14px 0;
+  padding: 14px 50px;
 }
 
 .header__list {
-  max-width: 818px;
-  justify-content: space-between;
+  max-width: 708px;
   align-items: center;
   flex-grow: 1;
-
+  justify-content: space-between;
   margin: 0;
   padding: 3px 0;
 
@@ -173,6 +175,13 @@ body {
 .header__logo {
   display: block;
   object-fit: fill;
+}
+
+.header__right {
+  max-width: 817px;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__link {
@@ -222,6 +231,7 @@ body {
 }
 
 .header__search {
+  display: block;
   fill: #FFF;
   stroke: var(--dark-gray);
 
@@ -448,6 +458,7 @@ body {
 
   padding-top: 64px;
   padding-left: 34.45%;
+  padding-right: 13%;
   padding-bottom: 63px;
 
   border: 1px solid var(--light-gray);
@@ -494,10 +505,6 @@ body {
 
 .how__container {
   flex-direction: column;
-
-  background-image: url("/img/how-bg.jpg");
-  background-position: right bottom;
-  background-repeat: no-repeat;
 }
 
 .how__title {
@@ -538,6 +545,18 @@ body {
 .how__link:active {
   outline: none;
   color: var(--dark-yellow);
+}
+
+.how__content--left {
+  margin-right: 142px;
+}
+
+.how__content--right {
+  flex-grow: 1;
+  background-image: url("/img/how-bg.jpg");
+  background-position: left top 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .how__subtitle {
@@ -930,3 +949,4 @@ body {
 }
 
 /* END Footer */
+
