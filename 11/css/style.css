@@ -554,7 +554,7 @@ body {
 .how__content--right {
   flex-grow: 1;
   background-image: url("/img/how-bg.jpg");
-  background-position: left top 10px;
+  background-position: center top 10px;
   background-repeat: no-repeat;
   background-size: cover;
 }
