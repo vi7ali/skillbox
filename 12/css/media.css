@@ -1,0 +1,190 @@
+.burger {
+  display: none;
+
+  position: relative;
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+}
+
+.burger::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+}
+
+.burger::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+}
+
+/* MEDIA 1024 */
+
+@media (max-width: 1024px) {
+  /* HEADER */
+
+  .header__container {
+    max-width: 924px;
+    padding: 26px 0;
+  }
+
+  .header__list {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .header__right {
+    flex-grow: 0;
+  }
+
+  .header__logo {
+    margin-right: 7px;
+  }
+
+  /* HERO */
+
+  .container {
+    max-width: 924px;
+  }
+
+  .hero__container {
+    padding-top: 160px;
+    padding-bottom: 30px;
+
+    background-image: url("/img/hero-bg-1024.jpg");
+  }
+
+  .hero__content {
+    padding: 0 77px;
+  }
+
+  .hero__title {
+    padding: 0;
+    margin-bottom: 16px;
+
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 73px;
+  }
+
+  .hero__desc {
+    margin-bottom: 60px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .hero__btn {
+    margin-bottom: 115px;
+  }
+
+  /* ABOUT */
+
+  .about__title {
+    margin-bottom: 10px;
+    padding-top: 80px;
+    padding-left: 0;
+  }
+
+  .about__desc {
+    max-width: 925px;
+
+    margin-bottom: 62px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .cards__left,
+  .cards__right {
+    width: 100%;
+  }
+
+  .cards__left {
+    min-height: 640px;
+    margin-bottom: 32px;
+    background-image: url("/img/about-bg-1-1024.jpg");
+  }
+
+  .card {
+    padding-left: 36.4%;
+    background-position: center left 75px;
+  }
+
+  /* HOW */
+
+  .how__title {
+    padding-top: 80px;
+  }
+
+  .how__container {
+    background-image: url(/img/how-bg-1024.jpg);
+  }
+
+  .how__steps {
+    margin-bottom: 52px;
+  }
+
+  .how__desc {
+    max-width: 437px;
+    margin-bottom: 23px;
+  }
+
+  /* FAQ */
+
+  .faq__title {
+    padding-top: 80px;
+    margin-bottom: 32px;
+  }
+
+  .faq__text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .br::after {
+    content: "\a";
+    white-space: pre;
+  }
+
+  .faq__content {
+    margin-bottom: 81px;
+  }
+
+  /* Footer */
+
+  .footer__middle {
+    max-width: 541px;
+  }
+
+  .footer__right {
+    display: none;
+  }
+
+  .footer__btn {
+    padding: 19px 38px;
+  }
+
+  .footer__label {
+    padding-top: 1px;
+  }
+
+}
+/* END MEDIA 1024 */
