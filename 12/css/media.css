@@ -114,6 +114,7 @@
   .cards__left,
   .cards__right {
     width: 100%;
+    max-width: 100%;
   }
 
   .cards__left {
@@ -123,7 +124,7 @@
   }
 
   .card {
-    padding-left: 36.4%;
+    padding-left: 34.3%;
     background-position: center left 75px;
   }
 
