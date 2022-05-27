@@ -16,6 +16,8 @@
 
       <a href="#">
         <picture class="header__logo">
+          <source srcset="img/logo-320.svg"
+          media="(max-width: 320px)">
           <source srcset="img/logo-1024.svg"
                   media="(max-width: 1024px)">
           <img src="img/logo.svg" alt="" />
@@ -71,21 +73,21 @@
           <ul class="bullets list-reset flex">
             <li class="bullets__item bullets__item--active">
               <a href="#" class="bullets__link">
-                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="bullet" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="7.5" cy="7.5" r="7.5" fill="white"/>
                 </svg>
               </a>
             </li>
             <li class="bullets__item">
               <a href="#" class="bullets__link">
-                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="bullet" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="7.5" cy="7.5" r="7.5" fill="white"/>
                 </svg>
               </a>
             </li>
             <li class="bullets__item">
               <a href="#" class="bullets__link">
-                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="bullet" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="7.5" cy="7.5" r="7.5" fill="white"/>
                 </svg>
               </a>
@@ -95,7 +97,6 @@
       </div>  <!-- /.container -->
     </section> <!-- /.hero -->
 
-
     <section class="about">
       <div class="container about__container flex">
         <h2 class="section-title about__title">
@@ -103,9 +104,9 @@
         </h2>
 
         <p class="main-text about__desc">
-          Также как перспективное планирование создаёт необходимость включения в&nbsp;производственный план целого ряда
+          Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда
           внеочередных мероприятий с&nbsp;учётом комплекса экспериментов, поражающих по&nbsp;своей масштабности
-          и&nbsp;грандиозности. А&nbsp;также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены
+          и грандиозности. А&nbsp;также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены
           отталкиваться от&nbsp;того, что убеждённость некоторых оппонентов требует от&nbsp;нас анализа как самодостаточных, так
           и&nbsp;внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта
           предопределяет высокую востребованность позиций, занимаемых участниками в&nbsp;отношении поставленных задач.
@@ -162,52 +163,54 @@
 
         <ul class="list-reset how__steps flex">
           <li class="how__item">
-            <a href="#" class="how__link how__link--active">
+            <button href="#" class="btn-reset how__link how__link--active">
               1 шаг
-            </a>
+            </button>
           </li>
           <li class="how__item">
-            <a href="#" class="how__link">
+            <button href="#" class="btn-reset how__link">
               2 шаг
-            </a>
+            </button>
           </li>
           <li class="how__item">
-            <a href="#" class="how__link">
+            <button href="#" class="btn-reset how__link">
               3 шаг
-            </a>
+            </button>
           </li>
           <li class="how__item">
-            <a href="#" class="how__link">
+            <button href="#" class="btn-reset how__link">
               4 шаг
-            </a>
+            </button>
           </li>
         </ul>
 
-        <h3 class="how__subtitle">
-          Проводим консультацию
-        </h3>
-
-        <p class="how__desc main-text">
-          Влечет за&nbsp;собой процесс внедрения и модернизации приоритизации разума над эмоциями. В&nbsp;рамках спецификации
-          современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими
-          инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически,
-          ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с&nbsp;зарубежных
-          источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить
-          традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в&nbsp;целом, однако
-          конкретные выводы, разумеется, призваны к&nbsp;ответу.
-        </p>
-
-        <div class="how__btns flex">
-          <button class="btn-reset btn how__btn how__btn--active">
-            Подробнее
-          </button>
-
-          <button class="btn-reset btn how__btn">
-            Договор
-          </button>
+        <div class="how__content flex">
+          <div class="how__content--left">
+            <h3 class="how__subtitle">
+              Проводим консультацию
+            </h3>
+            <p class="how__desc main-text">
+              Влечет за&nbsp;собой процесс внедрения и модернизации приоритизации разума над эмоциями. В&nbsp;рамках спецификации
+              современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими
+              инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически,
+              ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с&nbsp;зарубежных
+              источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить
+              традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в&nbsp;целом, однако
+              конкретные выводы, разумеется, призваны к&nbsp;ответу.
+            </p>
+            <div class="how__btns flex">
+              <button class="btn-reset btn how__btn how__btn--active">
+                Подробнее
+              </button>
+              <button class="btn-reset btn how__btn">
+                Договор
+              </button>
+            </div>
+          </div>
+          <div class="how__content--right"></div>
         </div>
       </div>
-    </section>
+    </section> <!-- /.how -->
 
     <section class="faq">
       <div class="container">
@@ -230,7 +233,7 @@
           <li class="faq__item">
             <a href="#" class="faq__link flex">
               <span class="faq__text">
-                У&nbsp;меня есть свой проект. Сможем&nbsp;ли мы&nbsp;его доработать <span class="faq__text--gray br">/</span>реализовать?
+                У&nbsp;меня есть свой проект. Сможем&nbsp;ли мы&nbsp;его доработать <span class="faq__text--gray br">/</span> реализовать?
               </span>
               <svg class="faq__icon" width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
                 <ellipse cx="25" cy="25" rx="25" ry="25"/>
@@ -273,7 +276,7 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> <!-- /.faq -->
 
   </main>
 

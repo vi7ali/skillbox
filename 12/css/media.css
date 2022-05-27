@@ -54,7 +54,7 @@
   /* HERO */
 
   .container {
-    max-width: 924px;
+    max-width: 1024px;
   }
 
   .hero__container {
@@ -120,6 +120,7 @@
   .cards__left {
     min-height: 640px;
     margin-bottom: 32px;
+    margin-right: 0;
     background-image: url("/img/about-bg-1-1024.jpg");
   }
 
@@ -131,10 +132,16 @@
   /* HOW */
 
   .how__title {
-    padding-top: 80px;
+    padding-top: 82px;
   }
 
-  .how__container {
+  .how__content--left {
+    max-width: 437px;
+    flex-grow: 1;
+    margin-right: 50px;
+  }
+
+  .how__content--right {
     background-image: url(/img/how-bg-1024.jpg);
   }
 
@@ -188,4 +195,269 @@
   }
 
 }
+
 /* END MEDIA 1024 */
+
+/* MEDIA 768 */
+
+@media (max-width: 768px) {
+
+  .container {
+    max-width: 768px;
+  }
+
+  /* HEADER */
+
+  .header__container {
+    max-width: 668px;
+    padding: 10px 0;
+  }
+
+  /* HERO */
+
+  .hero__container {
+    background-image: url("/img/hero-bg-768.jpg");
+  }
+
+  .hero__content {
+    padding: 0 40px;
+  }
+
+  .hero__title {
+    padding: 0;
+    margin-bottom: 16px;
+
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  .hero__desc {
+    margin-bottom: 60px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  /* ABOUT */
+
+  .cards__left {
+    min-height: 650px;
+  }
+
+  .cards__content--left {
+    padding: 34px 40px;
+  }
+
+  .cards__desc--left {
+    max-width: 366px;
+  }
+
+  .card {
+    min-height: 234px;
+    padding: 33px 44px 33px 169px;
+  }
+
+  .card--1,
+  .card--2 {
+    background-position: center left 39px;
+  }
+
+  .card--1 {
+    background-image: url("/img/about-card-1-768.svg");
+  }
+
+  .card--2 {
+    background-image: url("/img/about-card-2-768.svg");
+  }
+
+  /* HOW */
+
+  .how__title {
+    padding-top: 82px;
+  }
+
+  .how__steps {
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .how__content {
+    flex-direction: column-reverse;
+  }
+  .how__content--left {
+    flex-grow: 1;
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .how__desc {
+    max-width: 100%;
+    margin-bottom: 23px;
+  }
+
+  .how__content--right {
+    min-height: 284px;
+    margin-bottom: 38px;
+
+    background-image: url("/img/how-bg-768.jpg");
+    background-size: cover;
+    background-position: left top;
+  }
+
+  .br::after {
+    content: "";
+  }
+
+  .faq__link {
+    align-items: center;
+  }
+
+  .faq__text {
+    max-width: 570px;
+  }
+
+  /* FOOTER */
+
+  .footer__container {
+    flex-direction: column-reverse;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .footer__middle {
+    margin-bottom: 50px;
+  }
+
+  .footer__logo {
+    margin-bottom: 16px;
+  }
+
+}
+
+/* MEDIA 320 */
+
+@media (max-width: 320px) {
+
+  .container {
+    max-width: 320px;
+    padding: 0 15px;
+  }
+
+  /* HEADER */
+
+  .header__container {
+    max-width: 320px;
+    padding: 17px 15px;
+  }
+
+  /* HERO */
+
+  .hero__container {
+    padding-top: 60px;
+    padding-bottom: 13px;
+    text-align: center;
+  }
+
+  .hero__content {
+    padding: 0 21px;
+  }
+
+  .hero__title {
+    margin-bottom: 7px;
+
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .hero__desc {
+    margin-bottom: 33px;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .hero__btn {
+    margin-bottom: 33px;
+    padding: 12px 26px;
+    width: 162px;
+    max-height: 40px;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .bullets {
+    width: 71px;
+  }
+
+  .bullet {
+    width: 10px;
+  }
+
+  /* ABOUT */
+
+  .about__title {
+    padding-top: 60px;
+    margin-bottom: 20px;
+
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .about__desc {
+    margin-bottom: 14px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .cards__left {
+    align-items: flex-start;
+    padding-top: 208px;
+
+    min-height: 399px;
+
+    background-image: url("/img/about-bg-1-320.jpg");
+    background-position: top center;
+    background-size: contain;
+  }
+
+  .cards__content--left {
+    flex-direction: column;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .cards__desc--left {
+    margin-bottom: 12px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+
+    color: #333333;
+  }
+
+  .cards__btn {
+    align-self: flex-start;
+    padding: 10px 42px;
+    margin-bottom: 32px;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+
+    border: 2px solid var(--light-yellow);
+    color: #FF9900;
+  }
+
+}
