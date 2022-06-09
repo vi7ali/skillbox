@@ -530,7 +530,12 @@ body {
 }
 
 .how__link--active {
+  outline: none;
   color: var(--dark-yellow);
+}
+
+.how__link:hover {
+  color: var(--light-yellow);
 }
 
 .how__link:focus {
@@ -538,25 +543,40 @@ body {
   outline-offset: 5px;
 }
 
-.how__link:hover {
-  color: var(--light-yellow);
-}
-
 .how__link:active {
   outline: none;
   color: var(--dark-yellow);
 }
 
+
 .how__content--left {
+  display: none;
   margin-right: 142px;
 }
 
 .how__content--right {
+  display: none;
   flex-grow: 1;
-  background-image: url("/img/how-bg.jpg");
+  /* background-image: url("/img/how-bg.jpg"); */
   background-position: left top 10px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.how--bg1 {
+  background-image: url("/img/how-bg.jpg");
+}
+
+.how--bg2 {
+  background-image: url("/img/how-bg-2.jpg");
+}
+
+.how--bg3 {
+  background-image: url("/img/how-bg-3.jpg");
+}
+
+.how--bg4 {
+  background-image: url("/img/how-bg-4.jpg");
 }
 
 .how__subtitle {
@@ -650,6 +670,7 @@ body {
 }
 
 .faq__link {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -690,10 +711,10 @@ body {
   transition: fill 0.3s ease-in-out;
 }
 
-.faq__link:focus {
+/* .faq__link:focus {
   border-color: var(--light-yellow);
   color: var(--light-yellow);
-}
+} */
 
 .faq__link:focus ellipse {
   fill: var(--light-yellow);
@@ -735,6 +756,19 @@ body {
 
 .faq__text--gray {
   color: var(--light-gray);
+}
+
+.faq__desc p {
+  max-width: 1003px;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  line-height: 32px;
+
+  color: #333333;
+}
+
+.faq__desc p:first-child {
+  margin-bottom: 1.5em;
 }
 
 /* END FAQ */
@@ -1005,3 +1039,53 @@ body {
   opacity: 1;
 }
 
+/* HOW TABS */
+
+.how--active {
+  display: block;
+}
+
+/* Accordion */
+
+.ui-accordion .ui-accordion-header {
+  display: flex;
+  position: relative;
+  margin: 0;
+  padding: 30px 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.ui-state-default {
+  background: none;
+}
+.ui-state-focus {
+  border-color: var(--light-yellow);
+  color: var(--light-yellow);
+}
+
+.ui-state-active {
+  border-color: var(--light-gray);
+}
+
+.ui-state-active .faq__text {
+  color: var(--dark-gray);
+}
+
+.ui-state-active .icon__container .faq__icon {
+  transform: rotate(45deg);
+}
+
+.ui-state-active .icon__container .faq__icon ellipse {
+  fill: #ECECEC;
+}
+
+.ui-state-active .icon__container .faq__icon path {
+  fill: var(--gray);
+}
+
+.ui-accordion .ui-accordion-content {
+  border: none;
+}

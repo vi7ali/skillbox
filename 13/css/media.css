@@ -146,9 +146,9 @@
     margin-bottom: 7px;
   }
 
-  .how__content--right {
+  /* .how__content--right {
     background-image: url(/img/how-bg-1024.jpg);
-  }
+  } */
 
   .how__steps {
     margin-bottom: 50px;
@@ -321,8 +321,8 @@
     min-height: 284px;
     margin-bottom: 38px;
 
-    background-image: url("/img/how-bg-768.jpg");
-    background-size: cover;
+    /* background-image: url("/img/how-bg-768.jpg");
+    background-size: cover; */
     background-position: left top;
   }
 
@@ -792,4 +792,6 @@
   .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: 15px;
   }
+
+
 }
