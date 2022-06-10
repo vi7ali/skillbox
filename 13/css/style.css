@@ -150,6 +150,7 @@ body {
 }
 
 .header__container {
+  position: relative;
   justify-content: space-between;
   align-items: center;
 
@@ -547,7 +548,6 @@ body {
   outline: none;
   color: var(--dark-yellow);
 }
-
 
 .how__content--left {
   display: none;

@@ -45,3 +45,23 @@ $(".accordion").accordion({
   collapsible: true,
 });
 
+// Burger
+
+const burger = document.querySelector('.burger');
+const burgerList = document.querySelector('.burger__list');
+const burgerLinks = document.querySelectorAll('.burger__link');
+
+const toggleBurger = () => {
+  burger.classList.toggle('burger--active');
+  burgerList.classList.toggle('burger__list--active');
+  document.body.classList.toggle('stop-scroll');
+}
+
+const toggleList = () => {
+  burger.classList.remove('burger--active');
+  burgerList.classList.remove('burger__list--active');
+  document.body.classList.remove('stop-scroll');
+}
+
+burger.addEventListener('click', toggleBurger);
+burgerLinks.forEach(link => link.addEventListener('click', toggleList));
