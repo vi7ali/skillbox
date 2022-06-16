@@ -17,7 +17,7 @@ const tabsButtons = document.querySelectorAll('.how__link');
 const tabsTexts = document.querySelectorAll('.how__content--left');
 const tabsImgs = document.querySelectorAll('.how__content--right');
 
-const showTab = (e) => {
+const showTab = e => {
   const active = e.target.dataset.path;
   const activeBtn = document.querySelector(`[data-path='${active}']`);
   const activeText = document.querySelector(`[data-target='text-${active}']`);
@@ -65,3 +65,30 @@ const toggleList = () => {
 
 burger.addEventListener('click', toggleBurger);
 burgerLinks.forEach(link => link.addEventListener('click', toggleList));
+
+// Search
+
+const searchContainer = document.querySelector('.search-container');
+const search = document.querySelector('.header__search');
+const searchInput = document.querySelector('.search__input');
+const searchClose = document.querySelector('.search__close');
+
+const toggleClasses = () => {
+  searchContainer.classList.toggle('search-container--active');
+  searchInput.classList.toggle('search__input--visible');
+  searchClose.classList.toggle('search__close--visible');
+}
+
+const openSearch = () => {
+  toggleClasses();
+  search.removeEventListener('click', openSearch);
+  searchClose.addEventListener('click', closeSearch);
+};
+
+const closeSearch = () => {
+  toggleClasses();
+  searchClose.removeEventListener('click', closeSearch);
+  search.addEventListener('click', openSearch);
+};
+
+search.addEventListener('click', openSearch);
