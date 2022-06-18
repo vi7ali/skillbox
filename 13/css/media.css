@@ -84,11 +84,11 @@
 
 /* MEDIA 1024 */
 
-@media (max-width: 1024px) {
+@media (max-width: 1160px) {
   /* HEADER */
 
   .header__container {
-    max-width: 1024px;
+    max-width: 1160px;
     padding: 26px 50px;
   }
 
@@ -303,20 +303,20 @@
 
 /* MEDIA 768 */
 
-@media (max-width: 768px) {
+@media (max-width: 860px) {
 
   .burger__list {
     top: 68px;
   }
 
   .container {
-    max-width: 768px;
+    max-width: 860px;
   }
 
   /* HEADER */
 
   .header__container {
-    max-width: 768px;
+    max-width: 860px;
     padding: 10px 50px;
   }
 
@@ -460,34 +460,23 @@
 @media (max-width: 600px) {
 
   .search-container--active {
-    width: 300px;
+    max-width: 300px;
     padding-left: 10px;
   }
 
   .search-container--active .search .header__search {
-    outline: none;
     margin-right: 10px;
   }
 
   .search__input {
-    max-width: 412px;
+    max-width: 200px;
     margin-right: 5px;
   }
 }
 
-/* MEDIA 500 */
+/* MEDIA 320 */
 
 @media (max-width: 500px) {
-
-  .container, .header__container {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-
-/* MEDIA 420 */
-
-@media (max-width: 420px) {
 
   .hero__title {
     margin-bottom: 16px;
@@ -525,14 +514,8 @@
     flex-direction: column;
   }
 
-}
-
-/* MEDIA 320 */
-
-@media (max-width: 320px) {
-
   .container {
-    max-width: 320px;
+    max-width: 500px;
     padding: 0 15px;
   }
 
@@ -545,7 +528,7 @@
   /* HEADER */
 
   .header__container {
-    max-width: 320px;
+    max-width: 500px;
     padding: 17px 15px;
   }
 
@@ -623,8 +606,8 @@
     min-height: 399px;
 
     background-image: url("/img/about-bg-1-320.jpg");
-    background-position: top center;
-    background-size: contain;
+    background-position: top left;
+    background-size: auto
   }
 
   .cards__content--left {
@@ -664,7 +647,7 @@
     border: none;
     background-position: top left;
 
-    background-size: 22%;
+    background-size: auto;
   }
 
   .card--1 {
@@ -901,5 +884,8 @@
     bottom: 15px;
   }
 
+  .cards__desc--left {
+    max-width: 100%;
+  }
 
 }

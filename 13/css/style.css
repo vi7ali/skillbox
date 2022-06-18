@@ -320,7 +320,6 @@ body {
 }
 
 .search-container--active .search .header__search {
-  outline: none;
   margin-right: 20px;
 }
 
@@ -382,6 +381,8 @@ body {
   padding-left: 80px;
 
   z-index: 10;
+
+  pointer-events: none;
 }
 
 .hero__title {
@@ -396,6 +397,8 @@ body {
   line-height: 85.3px;
 
   color: #FFF;
+
+
 }
 
 .hero__desc {
@@ -424,6 +427,8 @@ body {
   background-color: var(--light-yellow);
 
   transition: background-color 0.3s ease-in-out;
+
+  pointer-events: all;
 }
 
 .hero__btn:focus {
@@ -534,16 +539,19 @@ body {
 }
 
 .cards__btn:focus {
+  color: #FFF;
   background-color: var(--light-yellow);
   border-color: var(--light-yellow);
 }
 
 .cards__btn:hover {
+  color: #FFF;
   background-color: var(--light-yellow);
   border-color: var(--light-yellow);
 }
 
 .cards__btn:active {
+  color: #FFF;
   background-color: var(--dark-yellow);
   border-color: var(--dark-yellow);
 }
