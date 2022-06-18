@@ -320,7 +320,6 @@ body {
 }
 
 .search-container--active .search .header__search {
-  outline: none;
   margin-right: 20px;
 }
 
@@ -382,6 +381,8 @@ body {
   padding-left: 80px;
 
   z-index: 10;
+
+  pointer-events: none;
 }
 
 .hero__title {
@@ -396,6 +397,8 @@ body {
   line-height: 85.3px;
 
   color: #FFF;
+
+
 }
 
 .hero__desc {
@@ -424,6 +427,8 @@ body {
   background-color: var(--light-yellow);
 
   transition: background-color 0.3s ease-in-out;
+
+  pointer-events: all;
 }
 
 .hero__btn:focus {
@@ -534,16 +539,19 @@ body {
 }
 
 .cards__btn:focus {
+  color: #FFF;
   background-color: var(--light-yellow);
   border-color: var(--light-yellow);
 }
 
 .cards__btn:hover {
+  color: #FFF;
   background-color: var(--light-yellow);
   border-color: var(--light-yellow);
 }
 
 .cards__btn:active {
+  color: #FFF;
   background-color: var(--dark-yellow);
   border-color: var(--dark-yellow);
 }
@@ -1044,7 +1052,7 @@ body {
 
 .footer__btn {
   padding: 19px 52px;
-  margin-right: 22px;
+  margin-right: 20px;
 
   font-weight: 700;
   font-size: 16px;
@@ -1068,15 +1076,59 @@ body {
   background-color: var(--dark-yellow);
 }
 
-.footer__check {
-  margin-right: 4px;
-}
-
 .footer__label {
+  position: relative;
+  padding-left: 13px;
+
   font-size: 16px;
   line-height: 32px;
 
   color: var(--light-gray);
+}
+
+.footer__check {
+  opacity: 0;
+  width: 0;
+  height: 0;
+
+}
+
+.footer__check--custom::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -7px;
+
+  height: 14px;
+  width: 14px;
+
+  border: 1px solid #CACACA;
+}
+
+.footer__check--custom::after {
+  content: "";
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -7px;
+
+  height: 14px;
+  width: 14px;
+
+  background-image: url("/img/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer__check:checked + .footer__check--custom::after {
+  display: block;
+}
+
+.footer__check:focus + .footer__check--custom::before {
+  outline: 2px solid var(--dark-yellow);
+  outline-offset: 2px;
 }
 
 .footer__desc {

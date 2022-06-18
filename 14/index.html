@@ -43,8 +43,8 @@
         </li>
       </ul>
 
-      <a href="#">
-        <picture class="header__logo">
+      <a aria-label="Логотип" href="#">
+        <picture aria-label="Логотип" class="header__logo">
           <source srcset="img/logo-320.svg"
           media="(max-width: 320px)">
           <source srcset="img/logo-1024.svg"
@@ -105,6 +105,7 @@
           <div class="swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
+
               <!-- Slides -->
               <div class="swiper-slide slide--1"></div>
               <div class="swiper-slide slide--2"></div>
@@ -113,7 +114,6 @@
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
           </div>
-
           <div class="hero__content">
             <h1 class="hero__title">
               Проектные решения любой сложности
@@ -125,6 +125,8 @@
               Заказать расчёт
             </button>
           </div> <!-- /.hero__content -->
+
+
         </div> <!-- /.hero__container -->
       </div>  <!-- /.container -->
     </section> <!-- /.hero -->
@@ -552,8 +554,10 @@
                 Отправить данные
               </button>
               <div class="submit__container">
-                <input class="footer__check" type="checkbox" name="personal" id="personal" checked>
-                <label class="footer__label" for="personal">Согласен на обработку данных</label>
+                <label class="footer__label" for="personal">
+                  <input class="footer__check" type="checkbox" name="personal" id="personal" checked>
+                  <span class="footer__check--custom" role="checkbox" aria-checked="true" tabindex="0">Согласен на обработку данных</span>
+                </label>
               </div>
             </div>
           </form>

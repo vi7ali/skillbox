@@ -4,6 +4,7 @@
 
 const swiper = new Swiper('.swiper', {
   loop: true,
+  simulateTouch: true,
 
   pagination: {
     el: '.swiper-pagination',
