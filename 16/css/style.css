@@ -1,3 +1,4 @@
+/* Reset and globals */
 *,
 *::before,
 *::after {
@@ -71,6 +72,18 @@ body {
 
   background-color: #424242;
 }
+
+.header {
+  display: flex;
+  justify-content: center;
+
+  color: #ebebeb;
+  background-color: #424242;
+}
+
+/* END Reset and globals */
+
+/* Custom Checkboxes */
 
 .checkboxes {
   display: flex;
@@ -170,5 +183,19 @@ body {
   border-color: #CCB26E;
 }
 
+/* END Custom Checkboxes */
+
+/* Custom Select */
+
+.choices {
+  width: 177px;
+  max-width: 177px;
+  border-radius: 10px;
+}
+
+.choices__inner {
+  max-width: 177px;
+  border-radius: 10px;
+}
 
 

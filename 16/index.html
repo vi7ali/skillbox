@@ -5,17 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Кастомные элементы</title>
 </head>
 <body>
 
+  <header class="header">
+    <h1 class="header__title">
+      Кастомные элементы
+    </h1>
+  </header>
+
   <main class="main">
-    <header class="container">
-      <h1 class="header__title">
-        Кастомные элементы
-      </h1>
-    </header>
 
     <section class="container checkboxes">
       <div class="checkboxes__container">
@@ -59,10 +61,25 @@
               <span class="checkboxes__custom">Олени и лоси</span>
             </label>
           </li>
-        </ul>
-      </div>
+        </ul> <!-- /.checkboxes__list  -->
+      </div> <!-- /.checkboxes__container  -->
+    </section> <!-- /.checkboxes  -->
+
+    <section class="container select">
+      <select name="material" id="materialCustom">
+        <option value="">Материал</option>
+        <option value="Древесина">Древесина</option>
+        <option value="Металл">Металл</option>
+        <option value="Камень">Камень</option>
+        <option value="Пластик">Пластик</option>
+        <option value="Композитный">Композитный</option>
+        <option value="Гипс">Гипс</option>
+      </select>
     </section>
+
   </main>
 
+  <script src="js/choices.min.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>
