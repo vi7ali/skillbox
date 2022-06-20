@@ -1,0 +1,172 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"),
+    url("/fonts/open-sans-v29-cyrillic-regular.woff2") format("woff2"),
+    url("/fonts/open-sans-v29-cyrillic-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans Semibold";
+  src: local("Open Sans Semibold"),
+    url("/fonts/open-sans-v29-cyrillic-600.woff2") format("woff2"),
+    url("/fonts/open-sans-v29-cyrillic-600.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+    url("/fonts/roboto-v30-latin_cyrillic-regular.woff2") format("woff2"),
+    url("/fonts/roboto-v30-latin_cyrillic-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  background-color: #FFF;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+  background-color: #424242;
+}
+
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkboxes__container {
+  max-width: 176px;
+  padding: 20px 30px 30px 30px;
+
+  background-color: #FFF;
+  border-radius: 10px;
+}
+
+.checkboxes__title {
+  margin-bottom: 20px;
+
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+
+  color: #333333;
+}
+
+.checkboxes__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.checkboxes__item {
+  position: relative;
+  padding-left: 21px;
+
+  font-size: 0;
+}
+
+.checkboxes__box {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  font-size: 0;
+}
+
+.checkboxes__custom {
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #333333;
+}
+
+.checkboxes__custom::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 13px;
+  height: 13px;
+
+  border: 1px solid #999999;
+  border-radius: 3px;
+
+  transition: border-color 0.3s ease-in-out;
+}
+
+.checkboxes__custom::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+
+  width: 15px;
+  height: 15px;
+
+  opacity: 0;
+
+  background-image: url("/img/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  transition: opacity 0.3s ease-in-out;
+}
+
+.checkboxes__box:checked + .checkboxes__custom::before {
+  border-color: #CCB26E;
+}
+
+.checkboxes__box:checked + .checkboxes__custom::after {
+  opacity: 1;
+}
+
+.checkboxes__box:focus + .checkboxes__custom::before {
+  outline: 1px solid #CCB26E;
+}
+
+.checkboxes__box:hover + .checkboxes__custom::before {
+  border-color: #CCB26E;
+}
+
+
+
