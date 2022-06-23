@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 a {
@@ -69,7 +70,7 @@ body {
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 10px;
-  padding-top: 25px;
+  padding-top: 50px;
 
   background-color: #424242;
 }
@@ -100,7 +101,7 @@ body {
 
 .checkboxes__container {
   max-width: 176px;
-  padding: 20px 30px 30px 30px;
+  padding: 20px 27px 30px 30px;
 
   background-color: #FFF;
   border-radius: 10px;
@@ -193,10 +194,6 @@ body {
 /* END Custom Checkboxes */
 
 /* Custom Select */
-
-.select {
-  padding-top: 20px;
-}
 
 .choices {
   border-radius: 10px;
@@ -339,3 +336,54 @@ body {
   width: 6px;
   background-color: #CCB26E;
 }
+
+/* END scroll */
+
+/* Form */
+.form__inner {
+  display: flex;
+  flex-direction: column;
+
+  padding: 40px 30px;
+  width: 440px;
+  max-width: 440px;
+  max-height: 410px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.form__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.form__name, .form__email, .form__phone {
+  padding: 24px 20px;
+  border: none;
+  background-color: #FFF;
+  border: none;
+  border-radius: 10px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #999;
+}
+
+.form__btn {
+  align-self: flex-start;
+  padding: 17px 53px;
+
+  font-family: 'Roboto';
+
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #FFF;
+  background-color: #FF5C00;
+
+  border-radius: 10px;
+}
+
+/* END Form */

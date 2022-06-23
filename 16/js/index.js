@@ -13,7 +13,7 @@ const choices = new Choices(select, {
 ymaps.ready(init);
 
 function init() {
-  var myMap = new ymaps.Map("map", {
+  const myMap = new ymaps.Map("map", {
       center: [48.872185, 2.354224],
       zoom: 15,
   });
@@ -41,3 +41,29 @@ new SimpleBar(document.querySelector('.scroll__inner'), {
   scrollbarMinSize: 70,
   scrollbarMaxSize: 70,
 });
+
+// Form validator
+
+const validate = new window.JustValidate('#form');
+validate.addField('#name', [
+  {
+    rule: 'minLength',
+    value: 3,
+  },
+  {
+    rule: 'maxLength',
+    value: 30,
+  },
+])
+.addField('#email', [
+  {
+    rule: 'required',
+    errorMessage: 'Email is required',
+  },
+  {
+    rule: 'email',
+    errorMessage: 'Email is invalid!',
+  },
+]);
+
+console.log(validate);
