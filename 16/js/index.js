@@ -34,4 +34,10 @@ function init() {
   myMap.controls.remove('rulerControl');
 }
 
+// Scrollbar
 
+new SimpleBar(document.querySelector('.scroll__inner'), {
+  autoHide: false,
+  scrollbarMinSize: 70,
+  scrollbarMaxSize: 70,
+});

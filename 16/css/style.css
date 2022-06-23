@@ -317,3 +317,25 @@ body {
 [class*="ground-pane"] {
   filter: grayscale(1);
 }
+
+/* END Map */
+
+/* Scroll */
+
+.scroll__inner {
+  width: 400px;
+  height: 310px;
+  background-color: #fff;
+  padding: 20px 30px;
+}
+
+.scroll__text {
+  line-height: 170%;
+
+  color: #333;
+}
+
+.simplebar-scrollbar::before {
+  width: 6px;
+  background-color: #CCB26E;
+}
