@@ -69,6 +69,7 @@ body {
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 10px;
+  padding-top: 25px;
 
   background-color: #424242;
 }
@@ -77,8 +78,14 @@ body {
   display: flex;
   justify-content: center;
 
+  padding-top: 25px;
+
   color: #ebebeb;
   background-color: #424242;
+}
+
+.header__title {
+  margin: 0;
 }
 
 /* END Reset and globals */
@@ -296,4 +303,17 @@ body {
   padding: 10px 15px;
   font-size: 14px;
   color: #333;
+}
+
+/* END Select */
+
+/* Map */
+
+.map__inner {
+  width: 460px;
+  height: 460px;
+}
+
+[class*="ground-pane"] {
+  filter: grayscale(1);
 }
