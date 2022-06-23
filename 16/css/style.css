@@ -187,15 +187,113 @@ body {
 
 /* Custom Select */
 
+.select {
+  padding-top: 20px;
+}
+
 .choices {
-  width: 177px;
-  max-width: 177px;
   border-radius: 10px;
 }
 
 .choices__inner {
-  max-width: 177px;
+  z-index: 10;
+  position: relative;
+  width: 176px;
+  min-height: 37px;
+  padding: 0;
+  line-height: 19px;
+  color: #333333;
+  border-radius: 10px;
+  border-color: #666;
+}
+
+.is-open .choices__inner {
+  padding: 0;
   border-radius: 10px;
 }
 
+.choices__placeholder {
+  opacity: 1;
+}
 
+.choices[data-type*="select-one"] .choices__inner {
+  padding: 0;
+}
+
+.choices__list--single {
+  padding: 0;
+}
+
+.choices__list--single .choices__item {
+  max-width: 176px;
+  width: 100%;
+  padding: 10px 15px;
+}
+
+.choices[data-type*="select-one"]::after {
+    content: "";
+    height: 8px;
+    width: 8px;
+    border: 1px solid #666;
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg);
+    right: 15px;
+    margin-top: -5px;
+    z-index: 20;
+}
+
+.choices[data-type*="select-one"].is-open::after {
+  border: 1px solid #CCB26E;
+  border-top: none;
+  border-left: none;
+  transform: rotate(-135deg);
+  margin-top: 0;
+}
+
+.choices__list--dropdown, .choices__list[aria-expanded] {
+  max-width: 176px;
+}
+
+.choices[data-type*=select-one] > .choices__list > .choices__list > .choices__item--selectable
+{
+	padding-right: 0px;
+}
+.choices[data-type*=select-one] > .choices__list > .choices__list > .choices__item--selectable::after
+{
+	display: none;
+}
+
+.choices__list--dropdown .choices__placeholder {
+  display: none;
+}
+
+.choices__list--dropdown, .choices__list[aria-expanded] {
+  margin-top: -5px;
+}
+
+.is-focused .choices__inner, .is-open .choices__inner {
+  border-color: #CCB26E;
+}
+
+.choices__list--dropdown, .choices__list[aria-expanded] {
+  border-color: #CCB26E;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.is-open .choices__list--dropdown, .is-open .choices__list[aria-expanded] {
+  border-color: #CCB26E;
+}
+
+.choices__list--dropdown .choices__list, .choices__list[aria-expanded] .choices__list {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+
+.choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #333;
+}
