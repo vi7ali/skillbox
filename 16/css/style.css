@@ -75,6 +75,10 @@ body {
   background-color: #424242;
 }
 
+.container:last-child {
+  padding-bottom: 50px;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -160,8 +164,8 @@ body {
 .checkboxes__custom::after {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: 2px;
+  left: -1px;
+  bottom: 1px;
 
   width: 15px;
   height: 15px;
@@ -405,3 +409,79 @@ body {
 }
 
 /* END Form */
+
+/* Tooltip */
+
+.tooltip__inner {
+  max-width: 375px;
+  padding: 20px 78px 20px 29px;
+  background-color: #FFF;
+}
+
+.tooltip__content {
+  position: relative;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  line-height: 170%;
+
+  color: #333;
+}
+
+.tooltip__marker {
+  position: relative;
+  fill: #BCBCBC;
+}
+
+.tooltip__marker::after {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 2px;
+  width: 0;
+  height: 0;
+
+  pointer-events: none;
+
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid #666;
+
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.tooltip__popup {
+  position: absolute;
+  top: 55px;
+  left: 152px;
+  min-width: 163px;
+
+  padding: 7px 15px;
+
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+
+  background-color: #666;
+  color: #FFF;
+
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.tooltip__marker:hover {
+  fill: #CCB26E;
+}
+
+.tooltip__marker:hover::after,  .tooltip__marker{
+  opacity: 1;
+}
+
+.tooltip__marker:hover + .tooltip__popup {
+  opacity: 1;
+}
+
+
+
+/* END Tooltip */
