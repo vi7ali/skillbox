@@ -42,28 +42,59 @@ new SimpleBar(document.querySelector('.scroll__inner'), {
   scrollbarMaxSize: 70,
 });
 
+// Input Mask
+
+const selector = document.getElementById("tel");
+
+const im = new Inputmask("+7 (999) 999-99-99");
+im.mask(selector);
+
 // Form validator
 
-const validate = new window.JustValidate('#form');
-validate.addField('#name', [
-  {
-    rule: 'minLength',
-    value: 3,
-  },
-  {
-    rule: 'maxLength',
-    value: 30,
-  },
-])
-.addField('#email', [
-  {
-    rule: 'required',
-    errorMessage: 'Email is required',
-  },
-  {
-    rule: 'email',
-    errorMessage: 'Email is invalid!',
-  },
-]);
+const validate = new window.JustValidate('#form', {
+  errorLabelCssClass: 'form__item--invalid',
+  errorLabelStyle: null,
+});
 
-console.log(validate);
+validate.addField('#name', [
+          {
+            rule: 'required',
+            errorMessage: 'Вы не ввели имя',
+          },
+          {
+            rule: 'minLength',
+            value: 2,
+            errorMessage: 'Минимум 2 буквы',
+          },
+          {
+            rule: 'maxLength',
+            value: 30,
+            errorMessage: 'Слишком длинное',
+          },
+        ])
+        .addField('#email', [
+          {
+            rule: 'required',
+            errorMessage: 'Вы не ввели e-mail',
+          },
+          {
+            rule: 'email',
+            errorMessage: 'Неверный формат',
+          },
+        ])
+        .addField('#tel', [
+          {
+            rule: 'required',
+            errorMessage: 'Вы не ввели телефон',
+          },
+          {
+            validator: () => {
+              const phone = selector.inputmask.unmaskedvalue();
+              return Number(phone) && phone.length === 10;
+            },
+            errorMessage: 'Неверный формат',
+          }
+        ]);
+
+
+

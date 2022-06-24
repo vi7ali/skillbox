@@ -351,11 +351,16 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+.form__item {
+  position: relative;
+}
+
 .form__item:not(:last-child) {
   margin-bottom: 30px;
 }
 
 .form__name, .form__email, .form__phone {
+  width: 100%;
   padding: 24px 20px;
   border: none;
   background-color: #FFF;
@@ -384,6 +389,19 @@ body {
   background-color: #FF5C00;
 
   border-radius: 10px;
+}
+
+.form__item--invalid {
+  position: absolute;
+  top: -20px;
+  padding-left: 20px;
+
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: #FF5C00;
 }
 
 /* END Form */

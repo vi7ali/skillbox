@@ -12,6 +12,7 @@
   <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
   <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
   <script src="js/choices.min.js"></script>
+  <script src="js/inputmask.min.js"></script>
   <noscript>
     <style>
       .simplebar-content-wrapper {
@@ -110,9 +111,15 @@
 
     <section class="container form">
       <form class="form__inner" id="form" action="" method="post">
-        <input class="form__item form__name" type="text" name="name" id="name" placeholder="Имя*">
-        <input class="form__item form__phone" type="tel" name="tel" id="tel" placeholder="Телефон*">
-        <input class="form__item form__email" type="email" name="email" id="email" placeholder="E-mail*">
+        <label class="form__item" for="name">
+          <input class="form__name" type="text" name="name" id="name" placeholder="Имя*">
+        </label>
+        <label class="form__item" for="tel">
+          <input class="form__phone" type="tel" name="tel" id="tel" placeholder="Телефон*">
+        </label>
+        <label class="form__item" for="email">
+          <input class="form__email" type="email" name="email" id="email" placeholder="E-mail*">
+        </label>
         <button class="form__item btn-reset form__btn" type="submit">Заказать</button>
       </form>
     </section> <!-- /.form  -->
