@@ -91,6 +91,12 @@ a {
 
 }
 
+.title {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 100%;
+}
+
 /* Header */
 
 .header {
@@ -179,23 +185,16 @@ a {
 
 .advantage__top {
   align-items: center;
+  margin-bottom: 23px;
 }
 
 .advantage__img {
   margin-right: 30px;
 }
 
-.advantage__top {
-  margin-bottom: 30px;
-}
-
 .advantage__title {
   max-width: 380px;
   margin-bottom: 17px;
-
-  font-weight: 700;
-  font-size: 4rem;
-  line-height: 100%;
 
   color: #2E2B44;
 }
@@ -209,4 +208,84 @@ a {
 
 .advantage__bottom {
   padding: 0;
+}
+
+.advantage__list {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.advantage__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.advantage__icon {
+  margin-right: 30px;
+}
+
+.advantage__text {
+  max-width: 240px;
+
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 120%;
+
+  color: #666;
+}
+
+/* Teacher */
+
+.teachers {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  background-color: #212133;
+}
+
+.teachers__inner {
+  padding-top: 73px;
+  padding-bottom: 73px;
+}
+
+.teachers__title {
+  margin-bottom: 23px;
+
+  color: #FFF;
+}
+
+.teachers__list {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.teachers__photo {
+  display: inline-block;
+  max-width: 255px;
+  height: 180px;
+
+  margin-bottom: 32px;
+
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.teachers__name {
+  margin-bottom: 8px;
+  padding-left: 1px;
+
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 150%;
+
+  color: #FFF;
+}
+
+.teachers__desc {
+  font-size: 1.6rem;
+  line-height: 150%;
+
+  color: #85859B;
 }
