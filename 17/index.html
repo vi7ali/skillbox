@@ -14,7 +14,7 @@
 <body>
 
 <header class="header">
-  <div class="flex container header__container">
+  <div class="flex my-container header__container">
     <a href="#" class="header__logo">
       <img src="img/skillbox-logo.png" alt="Логотип Skillbox">
     </a>
@@ -51,7 +51,7 @@
 
 <main class="main">
   <section class="hero">
-    <div class="container hero__inner flex">
+    <div class="my-container hero__inner flex">
       <div class="hero__content">
         <h1 class="hero__title">
           Курсы 3D моделирования
@@ -68,7 +68,7 @@
   </section>
 
   <section class="advantage">
-    <div class="container">
+    <div class="my-container">
       <div class="advantage__top flex">
         <picture aria-hidden="true" class="advantage__img">
           <source srcset="img/bg-adv-tablet-510.jpg"
@@ -92,7 +92,7 @@
       </div>
 
       <div class="advantage__bottom container">
-        <ul class="row list-reset advantage__list">
+        <ul class="row list-reset">
           <li class="col advantage__item">
             <img class="advantage__icon" src="img/eye-circle.svg" alt="">
             <p class="advantage__text">
@@ -119,48 +119,218 @@
   </section>
 
   <section class="teachers">
-    <div class="container teachers__inner">
+    <div class="my-container teachers__inner">
       <h2 class="teachers__title title">
         Преподаватели курсов
       </h2>
 
-      <ul class="row teachers__list list-reset">
-        <li class="col col-xl-3 teachers__item">
-          <img src="img/vladimir-desktop.jpg" alt="" class="teachers__photo">
-          <h3 class="teachers__name">Владимир Петров</h3>
-          <p class="teachers__desc">
-            Лишь непосредственные участники технического прогресса неоднозначны и будут в равной степени предоставлены&nbsp;сами себе.
-          </p>
-        </li>
-
-        <li class="col col-xl-3 teachers__item">
-          <img src="img/denis-desktop.jpg" alt="" class="teachers__photo">
-          <h3 class="teachers__name">Денис Сергеев</h3>
-          <p class="teachers__desc">
-            Безусловно, разбавленное изрядной долей эмпатии, рациональное мышление.
-          </p>
-        </li>
-
-        <li class="col col-xl-3 teachers__item">
-          <img src="img/mikhail-desktop.jpg" alt="" class="teachers__photo">
-          <h3 class="teachers__name">Михаил Андреев</h3>
-          <p class="teachers__desc">
-            Ясность нашей позиции очевидна: высокое качество позиционных исследований напрямую зависит от вывода.
-          </p>
-        </li>
-
-        <li class="col col-xl-3 teachers__item">
-          <img src="img/konstantin-desktop.jpg" alt="" class="teachers__photo">
-          <h3 class="teachers__name">Константин Дмитриев</h3>
-          <p class="teachers__desc">
-            Мы вынуждены отталкиваться от того, что существующая теория, в своём классическом представлении.
-          </p>
-        </li>
-      </ul>
+      <div class="container">
+        <ul class="row list-reset">
+          <li class="col-12 col-lg-3 col-md-6 col-sm-6 teachers__item">
+            <div class="teachers__photo">
+              <picture class="picture">
+                <source srcset="img/vladimir-320.jpg"
+                        media="(max-width: 500px)">
+                <source srcset="img/vladimir-576.jpg"
+                        media="(max-width: 576px)">
+                <source srcset="img/vladimir-768.jpg"
+                        media="(max-width: 800px)">
+                <img class="picture__photo" src="img/vladimir-desktop.jpg" alt="Фото учителя Владимир" />
+              </picture>
+            </div>
+            <h3 class="teachers__name">Владимир Петров</h3>
+            <p class="teachers__desc">
+              Лишь непосредственные участники технического прогресса неоднозначны и будут в равной степени предоставлены&nbsp;сами себе.
+            </p>
+          </li>
+          <li class="col-12 col-lg-3 col-md-6 col-sm-6 teachers__item">
+            <div class="teachers__photo">
+              <picture class="picture">
+                <source srcset="img/denis-320.jpg"
+                        media="(max-width: 500px)">
+                <source srcset="img/denis-576.jpg"
+                        media="(max-width: 576px)">
+                <source srcset="img/denis-768.jpg"
+                        media="(max-width: 800px)">
+                <img class="picture__photo" src="img/denis-desktop.jpg" alt="Фото учителя Денис" />
+              </picture>
+            </div>
+            <h3 class="teachers__name">Денис Сергеев</h3>
+            <p class="teachers__desc">
+              Безусловно, разбавленное изрядной долей эмпатии, рациональное мышление.
+            </p>
+          </li>
+          <li class="col-12 col-lg-3 col-md-6 col-sm-6 teachers__item">
+            <div class="teachers__photo">
+              <picture class="picture">
+                <source srcset="img/mikhail-320.jpg"
+                        media="(max-width: 500px)">
+                <source srcset="img/mikhail-576.jpg"
+                        media="(max-width: 576px)">
+                <source srcset="img/mikhail-768.jpg"
+                        media="(max-width: 800px)">
+                <img class="picture__photo" src="img/mikhail-desktop.jpg" alt="Фото учителя Михаил" />
+              </picture>
+            </div>
+            <h3 class="teachers__name">Михаил Андреев</h3>
+            <p class="teachers__desc">
+              Ясность нашей позиции очевидна: высокое качество позиционных исследований напрямую зависит от вывода.
+            </p>
+          </li>
+          <li class="col-12 col-lg-3 col-md-6 col-sm-6 teachers__item">
+            <div class="teachers__photo">
+              <picture class="picture">
+                <source srcset="img/konstantin-320.jpg"
+                        media="(max-width: 500px)">
+                <source srcset="img/konstantin-576.jpg"
+                        media="(max-width: 576px)">
+                <source srcset="img/konstantin-768.jpg"
+                        media="(max-width: 800px)">
+                <img class="picture__photo" src="img/konstantin-desktop.jpg" alt="Фото учителя Константин" />
+              </picture>
+            </div>
+            <h3 class="teachers__name">Константин Дмитриев</h3>
+            <p class="teachers__desc">
+              Мы вынуждены отталкиваться от того, что существующая теория, в своём классическом представлении.
+            </p>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 
+  <section class="courses">
+    <div class="my-container courses__inner">
+      <h2 class="courses__title">
+        Курсы
+      </h2>
+
+      <div class="container">
+        <ul class="row list-reset">
+          <li class="col-12 col-sm-6 col-xl-6 courses__item">
+            <div class="courses__photo">
+              <picture class="picture">
+                <source srcset="img/bg-courses-4d-mobile.jpg"
+                        media="(max-width: 500px)">
+                <source srcset="img/bg-courses-4d-510.jpg"
+                        media="(max-width: 576px)">
+                <source srcset="img/bg-courses-4d-690.jpg"
+                        media="(max-width: 800px)">
+                <img class="picture__photo" src="img/bg-courses-4d.jpg" alt="Cinema 4d" />
+              </picture>
+              <span class="courses__time">60 часов</span>
+            </div>
+            <div class="courses__bottom">
+              <h3 class="courses__name">Cinema 4d для начинающих</h3>
+              <p class="courses__desc">
+                Учитывая ключевые сценарии поведения, базовый вектор развития напрямую зависит от системы массового участия. Следует
+                отметить, что сложившаяся структура организации напрямую зависит от стандартных подходов.
+              </p>
+              <button class="courses__button btn-reset btn">Подробнее</button>
+            </div>
+          </li>
+
+          <li class="col-12 col-sm-6 col-xl-6 courses__item">
+            <div class="courses__photo">
+              <picture class="picture">
+                <source srcset="img/bg-courses-blender-mobile.jpg"
+                        media="(max-width: 500px)">
+                <source srcset="img/bg-courses-blender-510.jpg"
+                        media="(max-width: 576px)">
+                <source srcset="img/bg-courses-blender-690.jpg"
+                        media="(max-width: 800px)">
+                <img class="picture__photo" src="img/bg-courses-blender.jpg" alt="Blender" />
+              </picture>
+              <span class="courses__time">40 часов</span>
+            </div>
+            <div class="courses__bottom">
+              <h3 class="courses__name">Blender: продвинутый уровень</h3>
+              <p class="courses__desc">
+                Но убеждённость некоторых оппонентов в значительной степени обусловливает важность форм воздействия. Внезапно,
+                тщательные исследования конкурентов представлены.
+              </p>
+              <button class="courses__button btn-reset btn">Подробнее</button>
+            </div>
+          </li>
+
+          <li class="col-12 col-sm-6 col-xl-6 courses__item">
+            <div class="courses__photo">
+              <picture class="picture">
+                <source srcset="img/bg-courses-3ds-mobile.jpg"
+                        media="(max-width: 500px)">
+                <source srcset="img/bg-courses-3ds-510.jpg"
+                        media="(max-width: 576px)">
+                <source srcset="img/bg-courses-3ds-690.jpg"
+                        media="(max-width: 800px)">
+                <img class="picture__photo" src="img/bg-courses-3ds.jpg" alt="3D Studio Max" />
+              </picture>
+              <span class="courses__time">40 часов</span>
+            </div>
+            <div class="courses__bottom">
+              <h3 class="courses__name">Визуализация в 3ds Max</h3>
+              <p class="courses__desc">
+                Повседневная практика показывает, что сложившаяся структура организации обеспечивает актуальность кластеризации усилий.
+              </p>
+              <button class="courses__button btn-reset btn">Подробнее</button>
+            </div>
+          </li>
+
+          <li class="col-12 col-sm-6 col-xl-6 courses__item">
+            <div class="courses__photo">
+              <picture class="picture">
+                <source srcset="img/bg-courses-zbrush-mobile.jpg"
+                        media="(max-width: 500px)">
+                <source srcset="img/bg-courses-zbrush-510.jpg"
+                        media="(max-width: 576px)">
+                <source srcset="img/bg-courses-zbrush-690.jpg"
+                        media="(max-width: 800px)">
+                <img class="picture__photo" src="img/bg-courses-zbrush.jpg" alt="Zbrush" />
+              </picture>
+              <span class="courses__time">80 часов</span>
+            </div>
+            <div class="courses__bottom">
+              <h3 class="courses__name">Скульптинг в ZBrush</h3>
+              <p class="courses__desc">
+                Разнообразный и богатый опыт говорит нам, что граница обучения кадров требует определения и уточнения прогресса
+                профессионального сообщества! В частности, постоянный количественный рост и сфера нашей активности.
+              </p>
+              <button class="courses__button btn-reset btn">Подробнее</button>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
 </main>
+
+<footer class="footer">
+  <div class="my-container footer__container">
+    <ul class="socials list-reset">
+      <li class="socials__item">
+        <a href="" class="socials__link">
+          <img src="img/social-face.svg" alt="facebook">
+        </a>
+      </li>
+      <li class="socials__item">
+        <a href="" class="socials__link">
+          <img src="img/social-twit.svg" alt="twitter">
+        </a>
+      </li>
+      <li class="socials__item">
+        <a href="" class="socials__link">
+          <img src="img/social-inst.svg" alt="instagram">
+        </a>
+      </li>
+      <li class="socials__item">
+        <a href="" class="socials__link">
+          <img src="img/social-youtube.svg" alt="youtube">
+        </a>
+      </li>
+    </ul>
+    <span class="footer__copyright">SKILLBOX <span class="footer__copyright--blue">®</span> 2021</span>
+  </div>
+</footer>
 
 <script src="js/index.js"></script>
 </body>
