@@ -350,6 +350,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
   flex-grow: 1;
 
   min-height: 300px;
@@ -373,6 +374,7 @@ a {
 
 .courses__desc {
   flex-grow: 1;
+  margin-bottom: 49px;
   font-size: 16px;
   line-height: 150%;
 
