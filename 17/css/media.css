@@ -20,9 +20,10 @@
 .burger__line {
   position: absolute;
   right: 0;
-  height: 3px;
+  height: 2px;
   width: 100%;
   background-color: #FFF;
+  border-radius: 10px;
 }
 
 .burger__line--1 {
