@@ -248,7 +248,12 @@
     display: block;
   }
 
+  .header {
+    position: relative;
+  }
+
   .header__container {
+
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
@@ -259,7 +264,27 @@
   }
 
   .nav {
-    display: none;
+    position: absolute;
+    right: 0;
+    top: 78px;
+
+    width: 50%;
+
+    background-color: teal;
+    opacity: 0;
+
+    transform: translateX(100%);
+  }
+
+  .nav__list {
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-left: 2rem;
+  }
+
+  .nav__item {
+    margin-bottom: 2rem;
+    margin-right: 2rem;
   }
 
   .header__logo {
