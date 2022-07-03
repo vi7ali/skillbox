@@ -220,7 +220,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .advantage__icon {
@@ -422,8 +422,3 @@ a {
 .footer__copyright--blue {
   color: #3F2AFF;
 }
-
-
-
-
-
