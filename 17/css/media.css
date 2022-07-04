@@ -13,10 +13,6 @@
   outline-offset: 3px;
 }
 
-.burger:active {
-  outline: none;
-}
-
 .burger__line {
   position: absolute;
   right: 0;
@@ -39,6 +35,22 @@
 .burger__line--3 {
   bottom: 0;
   transition: background-color 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.burger:active {
+  outline: none;
+}
+
+.burger--active .burger__line--2 {
+  width: 75%;
+}
+
+.burger--active .burger__line--3 {
+  width: 50%;
+}
+
+.stop-scroll {
+  overflow: hidden;
 }
 
 @media (max-width: 991px) {
@@ -268,12 +280,22 @@
     right: 0;
     top: 78px;
 
-    width: 50%;
+    width: 65%;
 
-    background-color: teal;
-    opacity: 0;
+    background-color: #3F2AFF;
 
     transform: translateX(100%);
+    opacity: 0;
+
+    transition: transform 0.3s ease-in-out,
+                opacity 0.3s ease-in-out;
+  }
+
+  .nav--active {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 0.3s ease-in-out,
+                opacity 0.3s ease-in-out;
   }
 
   .nav__list {
