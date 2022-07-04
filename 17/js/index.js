@@ -12,7 +12,13 @@ const toggleMenu = () => {
   body.classList.toggle('stop-scroll');
 };
 
+const removeActiveStyles = () => {
+  burgerBtn.classList.remove('burger--active');
+  nav.classList.remove('nav--active');
+  body.classList.remove('stop-scroll');
+}
+
 burgerBtn.addEventListener('click', toggleMenu);
-navLinks.forEach( link => link.addEventListener('click', toggleMenu));
+navLinks.forEach( link => link.addEventListener('click', removeActiveStyles));
 
 
